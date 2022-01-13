@@ -1,6 +1,10 @@
 #include <iostream>
+#include <time.h>
+#include <string>
+#include <sstream>
 #include <fstream>
 #include <conio.h>
+
 using namespace std;
 
 
@@ -36,7 +40,7 @@ public:
 
 
 
-//co to za gowno 
+ 
 class Weryfikacja_Danych
 {
 public:
@@ -51,8 +55,61 @@ private:
 	int id_studenta_dodajacego;
 
 public:
-	string Zobacz_Uwage(int id_uwagi);
-	string Dodaj_Uwage(int id_studenta);
+	string Zobacz_Uwage(int id_uwagi)
+	{
+		int id = 0;
+	   cout << "Masz " << ileUwag << " uwag. Ktora chcialbys wyswietlic? Wpisz numer:" << endl;
+ 
+	  for (;;)
+	   {
+		 cin >> id;
+		 if (id > ileUwag)
+		 {
+			 "Wpisales niepoprawna liczbe. Sprobuj jeszcze raz.";
+		 }
+		 else
+		 {
+			break;
+		 }
+	   }
+ 
+	  fstream plik;
+	  plik.open("uwagi", ios::in);
+ 
+	  string linia;
+	  string tymczasowa;
+	  //tutaj muszę zrobić żeby się pokazywała uwaga o odpowiednim numerku
+	  while (getline(plik, linia))
+	   {
+		stringstream ss(linia);
+ 
+		while (getline(ss, tymczasowa, '#'))
+		 {
+			cout << linia << endl;
+		 }
+	   }
+        }
+	
+
+
+	string Dodaj_Uwage(int id_studenta)
+	{
+          int id = idStudenta;
+	  string tresc;
+	  cout << "Wpisz tutaj swoja uwage i zatwierdz klawiszem ENTER:" << endl;
+	  cin >> tresc;
+ 
+	  ofstream zapis("uwagi.txt", ios_base::app);
+ 
+	  zapis << tresc << endl << idStudenta << endl << "#" << endl;
+	  zapis.close();
+ 
+	  ileUwag++;
+ 
+	  system("cls");
+	  cout << "Twoja uwaga zostala pomyslnie dodana. Dziekujemy!" << endl;
+	}
+		
 };
 
 class Student {
