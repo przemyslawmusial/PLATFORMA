@@ -1,0 +1,7 @@
+1 Jerzy Pudzianowski login haslo
+997 Cezary Grzyb czaro grzyb123
+2 Mikolaj Rozmaryn miko1 pass
+4 Adi Adisowski arr1 haslo
+14 Darek Kors pol ska
+-10 Janusz Kowalski admin admin
+40 Andrzej Piaseczny andri piasek
