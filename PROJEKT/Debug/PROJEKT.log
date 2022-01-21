@@ -1,0 +1,4 @@
+﻿  PROJEKT.cpp
+C:\Users\Dawid\source\repos\PROJEKT\PROJEKT\PROJEKT.cpp(536): warning C4715: "Logowanie::zaloguj”: niewszystkie ścieżki kodu zwracają wartość
+C:\Users\Dawid\source\repos\PROJEKT\PROJEKT\PROJEKT.cpp(669): warning C4715: "Logowanie::zaloguj”: niewszystkie ścieżki kodu zwracają wartość
+  PROJEKT.vcxproj -> C:\Users\Dawid\source\repos\PROJEKT\Debug\PROJEKT.exe
