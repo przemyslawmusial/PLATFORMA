@@ -110,7 +110,7 @@ private:
 	int id_testu;*/
 
 public:
-	int Dodaj_Test()
+	int dodajTest()
 	{
 		string line;
 		string nazwaPliku;
@@ -211,7 +211,7 @@ public:
 	}
 
 
-	int Rozwiaz_Test(string idStudenta) {
+	int rozwiazTest(string idStudenta) {
 		int wynik = 0;
 
 
@@ -1332,7 +1332,7 @@ int main()
 				}
 			}
 		}
-		else if (wykladowca1->czyZalogowany() == 1) //Zalogowano na wyk³adowcê
+		else if (wykladowca1->czyZalogowany() == 1) //Zalogowano na wykÂ³adowcÃª
 		{
 			for (;;)
 			{
