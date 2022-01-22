@@ -1296,7 +1296,7 @@ int main()
 						case 1:
 							system("cls");
 							cout << "ROZWIAZ TEST" << endl;
-							test1.Rozwiaz_Test(student1->giveID());
+							test1.rozwiazTest(student1->giveID());
 							system("pause");
 							system("cls");
 							break;
@@ -1402,7 +1402,7 @@ int main()
 						{
 						case 1:
 							system("cls");
-							test1.Dodaj_Test();
+							test1.dodajTest();
 							//system("cls");
 							break;
 
